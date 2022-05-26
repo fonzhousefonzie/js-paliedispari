@@ -14,8 +14,10 @@ const parolaInserita = prompt('Inserisci una parola palindroma');
         console.log("primo array: " + parolaScomposta[i] + " - secondo array: " + parolaScompostaCapovolta[i]);
         if (parolaScomposta[i] === parolaScompostaCapovolta[i]){
             prova = true;
+            console.log(prova);
         } else {
             prova = false;
+            console.log(prova);
         }
     }
 
