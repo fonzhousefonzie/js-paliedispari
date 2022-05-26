@@ -4,6 +4,8 @@ const parolaInserita = prompt('Inserisci una parola palindroma');
     const parolaScomposta = parolaInserita.split("");
     const parolaScompostaCapovolta = [];
 
+    console.log(parolaScomposta);
+
     for (let i = (parolaScomposta.length - 1) ; i >= 0; i--){
         parolaScompostaCapovolta.push(parolaScomposta[i]);
     }
