@@ -1,26 +1,23 @@
 const parolaInserita = prompt('Inserisci una parola palindroma');
 
-    
-    const parolaScomposta = parolaInserita.split("");
-    const parolaScompostaCapovolta = [];;
+function isPali(parolaInserita){
+    let parolaScomposta = parolaInserita.split("");
+    let parolaScompostaCapovolta = [];;
 
     for (let i = (parolaScomposta.length - 1) ; i >= 0; i--){
         parolaScompostaCapovolta.push(parolaScomposta[i]);
     }
     
-    let prova;
+    let prova = false;
 
     for (let i = 0; i < parolaScomposta.length; i++){
         console.log("primo array: " + parolaScomposta[i] + " - secondo array: " + parolaScompostaCapovolta[i]);
         if (parolaScomposta[i] === parolaScompostaCapovolta[i]){
             prova = true;
-            console.log(prova);
         } else {
-            prova = false;
-            console.log(prova);
+            return false;
         }
     }
+}
 
-    console.log(parolaScomposta)
-    console.log(parolaScompostaCapovolta);
-    console.log(prova);
+console.log(isPali(parolaInserita));
